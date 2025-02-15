@@ -1,0 +1,30 @@
+<suite name="RCSSuite">
+    <!-- Các parameter -->
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="appURL" value="https://rise.anhtester.com/"/>
+
+    <!-- Các listener tạo báo cáo XML và HTML -->
+<!--    <listeners>-->
+<!--        <listener class-name="org.testng.reporters.XMLReporter"/> &lt;!&ndash; Báo cáo XML &ndash;&gt;-->
+<!--        <listener class-name="org.testng.reporters.EmailableReporter2"/> &lt;!&ndash; Báo cáo HTML &ndash;&gt;-->
+<!--    </listeners>-->
+
+    <!-- Test case -->
+    <test name="CRM test">
+        <classes>
+<!--            <class name="testRCS.testcases.SignInTest">-->
+<!--                <methods>-->
+<!--                    <include name="signIn"/>-->
+<!--                    <include name="openEventPage"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="testRCS.testcases.ProjectTest">
+<!--                <methods>-->
+<!--                    <include name="signIn"/>-->
+<!--                    <include name="openEventPage"/>-->
+<!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+
+</suite>
